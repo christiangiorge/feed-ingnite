@@ -6,7 +6,7 @@ import { Comment } from './Comment';
 
 import styles from './Post.module.css';
 
-export function Post(author, publishedAt, content) {
+export function Post({author, publishedAt, content}) {
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
         locale: ptBR,
     })
